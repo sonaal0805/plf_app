@@ -1,0 +1,266 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>
+            Timesheet
+        </title>
+    </head>
+    <body>
+        <br>
+            
+            <div class= container>
+               
+                <div class = row>
+                    <br>
+                    <h2>PLF Log Sheet</h2>
+                </div>
+                <br>
+                <div class = row>
+                    <label for="staticEmail" class="col-sm-4 col-form-label"><b>Add session(s) with students</b></label>
+                </div>
+                <div class = row>
+                  <form class="form-inline" action= "/my_form" method= "POST">
+                      <label class="sr-only" for="inlineFormInputName2">Name</label>
+                      
+                    
+                      <!-- <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label> -->
+                      <div class="input-group mb-2 mr-sm-2">
+          
+                          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="dd-mm-yyyy", name = 'date' required >
+                        </div>
+          
+          
+                          <!-- <input type="text"  class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Sign-in Time", name = 'time_in'> -->
+                          <select class="input-group custom-select mb-2 mr-sm-2" id="time_in" name = 'time_in' required>
+                            <option selected>Sign-in time</option>
+                            <option value="13:00:00">13:00:00</option>
+                            <option value="13:30:00">13:30:00</option>
+                            <option value="14:00:00">14:00:00</option>
+                            <option value="14:30:00">14:30:00</option>
+                            <option value="15:00:00">15:00:00</option>
+                            <option value="15:30:00">15:30:00</option>
+                            <option value="16:00:00">16:00:00</option>
+                            <option value="16:30:00">16:30:00</option>
+                            <option value="17:00:00">17:00:00</option>
+                            <option value="17:30:00">17:30:00</option>
+                            <option value="18:00:00">18:00:00</option>
+                            <option value="18:30:00">18:30:00</option>
+                            <option value="19:00:00">19:00:00</option>
+                            <option value="19:30:00">19:30:00</option>
+                            <option value="20:00:00">20:00:00</option>
+                            <option value="20:30:00">20:30:00</option>
+                          </select>
+          
+                        <!-- <select class="input-group custom-select mb-2 mr-sm-2" id="time_in" name = 'time_out' required>
+                            <option selected>Sign-out time</option>
+    
+                            <option value="1">13:30:00</option>
+                            <option value="2">14:00:00</option>
+                            <option value="3">14:30:00</option>
+                            <option value="4">15:00:00</option>
+                            <option value="5">15:30:00</option>
+                            <option value="6">16:00:00</option>
+                            <option value="7">16:30:00</option>
+                            <option value="8">17:00:00</option>
+                            <option value="9">17:30:00</option>
+                            <option value="10">18:00:00</option>
+                            <option value="11">18:30:00</option>
+                            <option value="12">19:00:00</option>
+                            <option value="13">19:30:00</option>
+                            <option value="14">20:00:00</option>
+                            <option value="15">20:30:00</option>
+                          </select>
+           -->
+                    
+                     
+                          <!-- <input type="integer"  class="form-control" id="inlineFormInputGroupUsername2" placeholder="Number of Students", name = 'number'> -->
+                          <select class="input-group custom-select mb-2 mr-sm-2" id="number" name = 'number'>
+                            <option selected>Number of students</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+        
+           
+                          </select>
+              
+                    
+                      <button type="submit" class="btn btn-primary mb-2">Add Session</button>
+                    </form>
+                  </div>
+        
+                  <div class = row>
+                    <label for="staticEmail" class="col-sm-4 col-form-label"><b>Add session(s) without students</b></label>
+                </div>
+                <div class = row>
+                      <form class="form-inline" action = /my_form_0 method= "POST" id = form_0>
+                          <!-- <label class="sr-only" for="inlineFormInputName2">Name</label> -->
+                          
+                        
+                          <!-- <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label> -->
+                          <div class="input-group mb-2 mr-sm-2">
+              
+                              <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="dd-mm-yyyy", name = 'date_0' required>
+                            </div>
+              
+              
+                            <select class="input-group custom-select mb-2 mr-sm-2 form-control" id="time_in_0" name = 'time_in_0' required>
+                                <option selected>Sign-in time</option>
+                                <option value="13:00:00">13:00:00</option>
+                                <option value="13:30:00">13:30:00</option>
+                                <option value="14:00:00">14:00:00</option>
+                                <option value="14:30:00">14:30:00</option>
+                                <option value="15:00:00">15:00:00</option>
+                                <option value="15:30:00">15:30:00</option>
+                                <option value="16:00:00">16:00:00</option>
+                                <option value="16:30:00">16:30:00</option>
+                                <option value="17:00:00">17:00:00</option>
+                                <option value="17:30:00">17:30:00</option>
+                                <option value="18:00:00">18:00:00</option>
+                                <option value="18:30:00">18:30:00</option>
+                                <option value="19:00:00">19:00:00</option>
+                                <option value="19:30:00">19:30:00</option>
+                                <option value="20:00:00">20:00:00</option>
+                                <option value="20:30:00">20:30:00</option>
+                              </select>
+         
+      
+                          <!-- <div class="input-group mb-2 mr-sm-2"> -->
+              
+                            <select class="input-group custom-select mb-2 mr-sm-2" id="time_out_0" name = 'time_out_0' required>
+                                <option selected>Sign-out time</option>
+    
+                                <option value="13:30:00">13:30:00</option>
+                                <option value="14:00:00">14:00:00</option>
+                                <option value="14:30:00">14:30:00</option>
+                                <option value="15:00:00">15:00:00</option>
+                                <option value="15:30:00">15:30:00</option>
+                                <option value="16:00:00">16:00:00</option>
+                                <option value="16:30:00">16:30:00</option>
+                                <option value="17:00:00">17:00:00</option>
+                                <option value="17:30:00">17:30:00</option>
+                                <option value="18:00:00">18:00:00</option>
+                                <option value="18:30:00">18:30:00</option>
+                                <option value="19:00:00">19:00:00</option>
+                                <option value="19:30:00">19:30:00</option>
+                                <option value="20:00:00">20:00:00</option>
+                                <option value="20:30:00">20:30:00</option>
+                              </select>
+<!--                         
+                          <div class="input-group mb-2 mr-sm-2">
+              
+                              <input type="integer"  class="form-control" id="inlineFormInputGroupUsername2" placeholder="Number of Students", name = 'number_0' value = 0 required>
+                            </div> -->
+                        
+                           <button type="submit" class="btn btn-primary mb-2">Add Session(s)</button>
+                        </form>
+                    </div>
+                 
+                    <div class = row>
+                        
+                        <label for="saticID" class="col-sm-4 col-form-label"><b>Delete Session</b></label>
+                    </div>
+                    
+                   
+                    <div class = row>
+                        <form class="form-inline" action= "/delete" method= "POST" id = form_0>
+                        <div class="input-group mb-2 mr-sm-2">
+                            <input  type="text" class="form-control" placeholder = 'Enter Session ID' name = 'delete_id' aria-describedby="session_delete" required>
+                       
+                        </div>
+                        <div class="input-group mb-2 mr-sm-2">
+                        <button type = 'submit' class="btn btn-danger"> Delete Session(s)</button>  
+                        </div>
+                        <div class="input-group mb-2 mr-sm-2">
+                            <small id="session_delete" class="form-text text-muted">
+                                Click "View Session(s) Added" button to get Session ID. To delete multiple consecutive sessions, enter the first and last session indices. For eg. to delete sessions 11 to 15 (inclusive), enter "11-15"
+                               </small>
+
+                        </div>
+                       
+                    </form>
+
+                    </div>
+               
+                    
+                    <div class = row>
+                       
+                    </div>
+                    <div class = row>
+                        <form class="form-inline" action= "/querry" method= "POST" id = querry>
+                            <button  type = submit class="btn btn-warning mb-2 mr-sm-2">View Session(s) added</button>    
+                        </form>
+                        <form class="form-inline" method= "POST" id = querry>
+                            <button  type = submit class="btn btn-success mb-2 mr-sm-2" disabled>Submit</button>    
+                        </form>
+                                            
+                    </div>
+                    <div class = row>
+                        {{ x }}
+                    </div>
+                    <br>
+                  
+                       
+                  
+            </div>
+
+
+         
+          
+
+
+
+
+
+          <script>
+            function add_table_row() {
+              var table = document.getElementById("timesheet");
+              var row = table.insertRow(0);
+              var cell1 = row.insertCell(0);
+              var cell2 = row.insertCell(1);
+              var cell3 = row.insertCell(2);
+              cell1.innerHTML = "NEW CELL1";
+              cell2.innerHTML = "NEW CELL2";
+              cell2.innerHTML = "NEW CELL2";
+            }
+            </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+<script>
+    $(document).ready(function(){
+        var date_input=$('input[name="date"]'); //our date input has the name "date"
+        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+            format: 'dd-mm-yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        })
+    })
+    $(document).ready(function(){
+        var date_input=$('input[name="date_0"]'); //our date input has the name "date"
+        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+            format: 'dd-mm-yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        })
+    })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
