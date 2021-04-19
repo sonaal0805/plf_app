@@ -196,16 +196,20 @@
                     </div>
                     <div class = row>
                         <form class="form-inline" action= "/querry" method= "POST" id = querry>
-                            <button  type = submit class="btn btn-warning mb-2 mr-sm-2">View Session(s) added</button>    
+                            <button  type = submit class="btn btn-success mb-2 mr-sm-2"  formtarget=”_blank”>View Session(s) added</button>    
                         </form>
                         <form class="form-inline" method= "POST" id = querry>
                             <button  type = submit class="btn btn-success mb-2 mr-sm-2" disabled>Submit</button>    
                         </form>
                                             
                     </div>
-                    <div class = row>
-                        {{ x }}
-                    </div>
+                    <!-- <div class = row>
+                            {% for table in tables %}
+                            <h2>{{titles[loop.index]}}</h2>
+                            {{ table|safe }}
+                            {% endfor %}
+
+                    </div> -->
                     <br>
                   
                        
